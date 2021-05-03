@@ -32,7 +32,12 @@ namespace WishList
             }
 
             app.UseRouting();
-            app.UseEndpoints(enpoints => { enpoints.MapDefaultControllerRoute(); });
+
+            app.UseEndpoints(enpoints => 
+            {
+                enpoints.MapDefaultControllerRoute(); 
+            }
+            );
         }
     }
 }
